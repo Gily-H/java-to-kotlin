@@ -11,5 +11,3 @@ rootProject.name = "gradle-project"
 include("app", "list", "utilities")
 include("designPatterns")
 include("kotlinExamples")
-include("designPatterns")
-include("kotlinExamples")

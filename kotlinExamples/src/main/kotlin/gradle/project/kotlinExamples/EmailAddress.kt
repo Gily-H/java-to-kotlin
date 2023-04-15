@@ -4,6 +4,9 @@ package gradle.project.kotlinExamples
  * "data" - class modifier
  * Generates the 'equals' 'hashCode' and 'toString' methods if undefined
  * We can define the methods with our own implementation
+ *
+ * Cons: generates a 'copy' method that gives direct access to internal state (no encapsulation)
+ * Only define a data class that does not have invariants (properties that should not mutate)
  */
 data class EmailAddress(private val localPart: String, private val domain: String) {
     /**
