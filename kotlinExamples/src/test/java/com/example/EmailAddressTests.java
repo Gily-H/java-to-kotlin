@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class EmailAddressTests {
 
   @Test
-  public void parsing() {
+  public void parsing_java() {
     assertEquals(
         new EmailAddress("fred", "example.com"),
         EmailAddress.parse("fred@example.com")
@@ -16,7 +16,7 @@ public class EmailAddressTests {
   }
 
   @Test
-  public void parsingFailures() {
+  public void parsing_failure_java() {
     assertThrows(
         IllegalArgumentException.class,
         () -> EmailAddress.parse("@")
